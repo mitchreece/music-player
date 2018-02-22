@@ -1,0 +1,19 @@
+{
+  "name": "music-player",
+  "version": "0.0.1",
+  "description": "Desktop Music Player",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint *.js",
+    "eslint-fix": "eslint *.js --fix"
+  },
+  "repository": "https://github.com/mitchreece/music-player",
+  "author": "mitchreece <mitchellreece18@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "electron-prebuilt-compile": "^1.8.2",
+    "eslint": "^4.18.1",
+    "eslint-config-mitchreece-base": "^2.0.0"
+  }
+}
