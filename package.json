@@ -4,8 +4,8 @@
   "description": "Desktop Music Player",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint *.js",
-    "eslint-fix": "eslint *.js --fix",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint . --fix",
     "stylelint": "stylelint *.css",
     "stylelint-fix": "stylelint *.css --fix"
   },
@@ -17,7 +17,7 @@
     "@mitchreece/stylelint-config-base": "^1.1.0",
     "electron-prebuilt-compile": "^1.8.2",
     "eslint": "^4.18.1",
-    "eslint-config-mitchreece-base": "^2.0.0",
+    "eslint-config-mitchreece-base": "^2.1.0",
     "stylelint": "^9.1.1"
   }
 }

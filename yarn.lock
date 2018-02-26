@@ -1620,9 +1620,9 @@ escodegen@^1.6.1:
   optionalDependencies:
     source-map "~0.5.6"
 
-eslint-config-mitchreece-base@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-mitchreece-base/-/eslint-config-mitchreece-base-2.0.0.tgz#85724f81a8d03a5c2024ea193fa50b3aed99c3c1"
+eslint-config-mitchreece-base@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-mitchreece-base/-/eslint-config-mitchreece-base-2.1.0.tgz#3e8e5c3e233eec4714b64d6d8e3966338d17929c"
 
 eslint-scope@^3.7.1:
   version "3.7.1"
