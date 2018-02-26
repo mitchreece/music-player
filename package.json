@@ -5,15 +5,19 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint *.js",
-    "eslint-fix": "eslint *.js --fix"
+    "eslint-fix": "eslint *.js --fix",
+    "stylelint": "stylelint *.css",
+    "stylelint-fix": "stylelint *.css --fix"
   },
   "repository": "https://github.com/mitchreece/music-player",
   "author": "mitchreece <mitchellreece18@gmail.com>",
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@mitchreece/stylelint-config-base": "^1.1.0",
     "electron-prebuilt-compile": "^1.8.2",
     "eslint": "^4.18.1",
-    "eslint-config-mitchreece-base": "^2.0.0"
+    "eslint-config-mitchreece-base": "^2.0.0",
+    "stylelint": "^9.1.1"
   }
 }
