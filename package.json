@@ -2,7 +2,7 @@
   "name": "music-player",
   "version": "0.0.1",
   "description": "Desktop Music Player",
-  "main": "main.js",
+  "main": "es6-init.js",
   "scripts": {
     "start": "electron .",
     "eslint": "eslint .",
@@ -17,8 +17,12 @@
   "devDependencies": {
     "@mitchreece/stylelint-config-base": "^1.1.0",
     "electron": "^1.8.2",
+    "electron-compilers": "^5.9.0",
     "eslint": "^4.18.1",
     "eslint-config-mitchreece-base": "^2.1.0",
     "stylelint": "^9.1.1"
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.2"
   }
 }
