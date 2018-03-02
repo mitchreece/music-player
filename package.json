@@ -10,6 +10,15 @@
     "stylelint": "stylelint *.css",
     "stylelint-fix": "stylelint *.css --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": ["yarn eslint-fix", "git add"],
+    "*.css": ["yarn stylelint-fix", "git add"]
+  },
   "repository": "https://github.com/mitchreece/music-player",
   "author": "mitchreece <mitchellreece18@gmail.com>",
   "license": "MIT",
@@ -24,6 +33,8 @@
     "eslint": "^4.18.1",
     "eslint-config-mitchreece-base": "^2.1.0",
     "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.15.0-rc.8",
+    "lint-staged": "^7.0.0",
     "react-hot-loader": "^4.0.0",
     "stylelint": "^9.1.1"
   },
