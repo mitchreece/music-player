@@ -5,21 +5,9 @@
         <title>Music App</title>
     </head>
     <body>
-        <div id="app" class="app"></div>
-        <script type="text/jsx">
-            import React from 'react'
-            import ReactDOM from 'react-dom'
-            import { AppContainer } from 'react-hot-loader'
-
-            const render = (function renderer() {
-                // root component must be required in this function to enable hmr
-                const App = require('./src/App').default
-
-                ReactDOM.render(<AppContainer><App /></AppContainer>, document.getElementById('app'))
-                return renderer
-            })()
-
-            if (module.hot) { module.hot.accept(render) }
+        <div id="app" class="app-container"></div>
+        <script>
+            require('./src/')
         </script>
     </body>
 </html>
