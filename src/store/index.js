@@ -1,9 +1,8 @@
 import {createStore} from 'redux'
+import reducer from './reducers'
 
-export default createStore(() => {
-	return (
-		{
-			title: document.title,
-		}
-	)
-})
+export const initialState = {
+	title: document.title,
+} 
+
+export default createStore(reducer, initialState)
