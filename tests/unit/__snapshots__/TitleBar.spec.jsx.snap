@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="title-bar"
+>
+  <p
+    className="title-bar__title"
+  >
+    Google Play Music Desktop App
+  </p>
+</header>
+`;
