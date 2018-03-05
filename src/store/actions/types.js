@@ -1,1 +1,1 @@
-export const MODIFY_TITLE = 'MODIFY_TITLE'
+export const UPDATE_TITLE = 'UPDATE_TITLE'
