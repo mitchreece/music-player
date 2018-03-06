@@ -3,6 +3,7 @@ const { enableLiveReload } = require('electron-compile')
 const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-installer')
 const path = require('path')
 const url = require('url')
+const { title } = require('./store/reducers/app').initialState
 
 let win
 
@@ -13,6 +14,7 @@ app.on('ready', () => {
 	installExtension(REACT_DEVELOPER_TOOLS)
 
 	win = new BrowserWindow({
+		title: title,
 		height: 650,
 		width: 1000,
 		backgroundColor: '#000',
@@ -26,3 +28,5 @@ app.on('ready', () => {
 		slashes: true,
 	}))
 })
+
+export default win

@@ -1,14 +1,15 @@
 import { UPDATE_TITLE } from '../actions/types'
+import { remote } from 'electron'
 
 export const initialState = {
-	title: 'Google Play Music Desktop App',
+	title: 'Music Player Desktop App',
 } 
 
-export default function document(state = initialState, action) {
+export default function app(state = initialState, action) {
 
 	switch(action.type) {
 	case UPDATE_TITLE:
-		document.title = action.title
+		remote.getCurrentWindow().setTitle(action.title)
 		return Object.assign({}, state, {
 			title: action.title,
 		})
