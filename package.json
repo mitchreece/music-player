@@ -13,16 +13,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn lint-staged"
     }
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "yarn eslint-fix",
+      "eslint --fix",
       "git add"
     ],
     "*.css": [
-      "yarn stylelint-fix",
+      "stylelint --fix",
       "git add"
     ]
   },
