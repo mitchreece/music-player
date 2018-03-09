@@ -2,7 +2,7 @@
   "name": "music-player",
   "version": "0.0.1",
   "description": "Desktop Music Player",
-  "main": "es6-init.js",
+  "main": "./src/main.js",
   "scripts": {
     "start": "electron .",
     "eslint": "eslint .",
@@ -36,7 +36,6 @@
     "babel-preset-es2017-node7": "^0.5.2",
     "babel-preset-react": "^6.24.1",
     "electron": "^1.8.2",
-    "electron-compilers": "^5.9.0",
     "electron-devtools-installer": "^2.2.3",
     "eslint": "^4.18.1",
     "eslint-config-mitchreece-base": "^2.1.0",
@@ -51,7 +50,6 @@
     "stylelint": "^9.1.1"
   },
   "dependencies": {
-    "electron-compile": "^6.4.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",

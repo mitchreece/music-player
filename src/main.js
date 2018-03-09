@@ -1,14 +1,10 @@
 const { app, BrowserWindow } = require('electron')
-const { enableLiveReload } = require('electron-compile')
 const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-installer')
 const path = require('path')
 const url = require('url')
 const { title } = require('./store/reducers/app').initialState
 
 let win
-
-// enable react hot module reload
-enableLiveReload({strategy: 'react-hmr'})
 
 app.on('ready', () => {
 	installExtension(REACT_DEVELOPER_TOOLS)
