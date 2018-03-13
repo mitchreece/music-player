@@ -16,14 +16,16 @@ module.exports = merge(require('./webpack.base.config'), {
 				test: /\.css?$/,
 				exclude: /node_modules/,
 				use: [
-					{ loader: 'style-loader' },
+					'style-loader',
 					{ 
 						loader: 'css-loader', 
 						query: {
 							modules: true,
 							localIdentName: '[name]__[local]',
+							importLoaders: 1,
 						},
-					},
+					}, 
+					'postcss-loader',
 				],
 			},
 		],
