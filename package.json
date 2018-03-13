@@ -46,6 +46,7 @@
     "electron-devtools-installer": "^2.2.3",
     "eslint": "^4.18.1",
     "eslint-config-mitchreece-base": "^2.1.0",
+    "eslint-plugin-css-modules": "^2.7.5",
     "eslint-plugin-jest": "^21.12.3",
     "eslint-plugin-react": "^7.7.0",
     "html-webpack-plugin": "^3.0.6",

@@ -1,5 +1,8 @@
 {
-    "extends": "mitchreece-base",
+    "extends": [
+        "mitchreece-base",
+        "plugin:css-modules/recommended"
+    ],
     "env": {
         "browser": true,
         "jest/globals": true
@@ -11,7 +14,8 @@
     },
     "plugins": [
         "react",
-        "jest"
+        "jest",
+        "css-modules"
     ],
     "rules": {
         "react/jsx-uses-vars": "error",
