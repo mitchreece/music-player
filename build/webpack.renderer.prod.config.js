@@ -33,6 +33,11 @@ module.exports = merge(require('./webpack.base.config'), {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: config.template,
+			minify: {
+				collapseWhitespace: true,
+				removeComments: true,
+				minifyCSS: true,	
+			},
 		}),
 		new webpack.EnvironmentPlugin(require('../config/prod.env')),
 	],
