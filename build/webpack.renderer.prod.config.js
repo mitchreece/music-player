@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const merge = require('webpack-merge')
 const config = require('../config').build
+const extractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = merge(require('./webpack.base.config'), {
 	target: 'electron-renderer',
@@ -15,18 +16,20 @@ module.exports = merge(require('./webpack.base.config'), {
 			{
 				test: /\.css?$/,
 				exclude: /node_modules/,
-				use: [
-					'style-loader',
-					{ 
-						loader: 'css-loader', 
-						query: {
-							modules: true,
-							localIdentName: '[name]__[local]',
-							importLoaders: 1,
+				use: extractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: [
+						{ 
+							loader: 'css-loader', 
+							query: {
+								modules: true,
+								localIdentName: '[name]__[local]',
+								importLoaders: 1,
+							},
 						},
-					}, 
-					'postcss-loader',
-				],
+						'postcss-loader',
+					],
+				}),
 			},
 		],
 	},
@@ -39,6 +42,7 @@ module.exports = merge(require('./webpack.base.config'), {
 				minifyCSS: true,	
 			},
 		}),
+		new extractTextPlugin('main.css'),
 		new webpack.EnvironmentPlugin(require('../config/prod.env')),
 	],
 })
